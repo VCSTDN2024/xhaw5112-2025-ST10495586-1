@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <title>Empowering The Nation - Enquiry</title>
+    <link rel="icon" type="image/x-icon" href="Images/Empowering The Nation Logo.jpg"> 
+    
+    <style>
+        /* Custom styles provided in the example template, adapted to use project CSS variables */
+        :root {
+            --primary-blue: #003366; 
+            --secondary-green: #33CC66; 
+            --neutral-white: #FFFFFF; 
+            --accent-grey: #F2F2F2; 
+        }
+
+        .enquiry-form-section .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .enquiry-form-section form {
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            background-color: var(--neutral-white); /* Use white for the form background */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+        .enquiry-form-section form p {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .enquiry-form-section label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        .enquiry-form-section input[type="text"], 
+        .enquiry-form-section input[type="email"], 
+        .enquiry-form-section textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .course-selection {
+            padding: 20px 0;
+            border-top: 1px solid var(--accent-grey);
+            border-bottom: 1px solid var(--accent-grey);
+            margin: 20px 0;
+        }
+        .course-selection label {
+            font-weight: normal; 
+        }
+        .calculations-section {
+            background-color: var(--accent-grey); /* Light Grey background */
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        .calculations-section h2 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+        .calculations-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        .calculations-section span {
+            font-weight: 700;
+            color: var(--secondary-green); /* Bright Green for emphasis */
+            font-family: 'Montserrat', sans-serif;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: var(--secondary-green);
+            color: var(--primary-blue);
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #29a352;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo-link" style="text-decoration: none;">
+                <img src="Images/Empowering The Nation Logo.jpg" alt="Empowering The Nation Logo" class="logo-img" style="height: 40px; margin-right: 10px;">
+                <div class="brand" style="font-size: 1.5em; font-weight: bold; color: var(--neutral-white);">Empowering The Nation</div>
+            </a>
+            <div class="nav-links">
+                <a href="Index.html">Home</a>
+                <a href="SixMonthsCourse.html">Courses</a> 
+                <a href="Enquiry.html" class="active">Enquiry</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="AboutUs.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" style="padding-top: 40px; padding-bottom: 20px; background-color: var(--neutral-white);">
+            <div class="container" style="text-align: center;">
+                <h1>Get Involved</h1>
+                <p>Select your courses and submit your details to receive an instant quote.</p>
+            </div>
+        </section>
+
+        <section class="enquiry-form-section">
+            <div class="container">
+                <h2>Enquiries & Request Quote</h2>
+                
+                <form id="course-enquiry-form">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" id="contact" name="contact" required> 
+                    </p>
+
+                    <section class="course-selection">
+                        <h3 style="margin-top: 0; color: var(--primary-blue);">Select Courses:</h3>
+
+                        <input name="course" type="checkbox" id="first-aid" value="First Aid"/>
+                        <label for="first-aid">First Aid (R1500)</label><br>
+
+                        <input name="course" type="checkbox" id="sewing" value="Sewing"/>
+                        <label for="sewing">Sewing (R1500)</label><br>
+
+                        <input name="course" type="checkbox" id="landscaping" value="Landscaping"/>
+                        <label for="landscaping">Landscaping (R1500)</label><br>
+
+                        <input name="course" type="checkbox" id="life-skills" value="Life Skills"/>
+                        <label for="life-skills">Life Skills (R1500)</label><br>
+
+                        <input name="course" type="checkbox" id="cooking" value="Cooking"/>
+                        <label for="cooking">Cooking (R750)</label><br>
+
+                        <input name="course" type="checkbox" id="child-minding" value="Child Minding"/>
+                        <label for="child-minding">Child Minding (R750)</label><br>
+
+                        <input name="course" type="checkbox" id="garden-maintenance" value="Garden Maintenance"/>
+                        <label for="garden-maintenance">Garden Maintenance (R750)</label><br>
+                    </section>
+
+                    <p>
+                        <label for="message">Your Message/Specific Enquiry:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </p>
+
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">Send Message & Request Quote</button>
+                </form>
+
+                <section class="calculations-section">
+                    <h2>Quote Summary (Includes 15% VAT)</h2>
+                    <p>
+                        Total number of courses selected: <span id="course-count-display">0</span>
+                    </p>
+                    <p>
+                        Your multi-course discount: <span id="discount-display">0%</span>
+                    </p>
+                    <p style="font-size: 1.5rem;">
+                        Final Quoted Cost: <span id="total-cost-display">R0.00</span>
+                    </p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h2>Empowering The Nation</h2>
+                <p>&copy; 2025. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>Connect with us:</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank"><img src="Images/instagram.jpg" height="24" width="24" alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="Images/Facebook.jpg" height="24" width="24" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Define the prices from the HTML provided in the user's example
+        const coursePrices = {
+            'First Aid': 1500,
+            'Sewing': 1500,
+            'Landscaping': 1500,
+            'Life Skills': 1500,
+            'Cooking': 750,
+            'Child Minding': 750,
+            'Garden Maintenance': 750
+        };
+
+        const VAT_RATE = 0.15; // 15% VAT as per project specifications
+
+        // Select all the course checkboxes and the display elements
+        const form = document.getElementById('course-enquiry-form');
+        const checkboxes = document.querySelectorAll('input[name="course"]');
+        const discountDisplay = document.getElementById('discount-display');
+        const totalCostDisplay = document.getElementById('total-cost-display');
+        const courseCountDisplay = document.getElementById('course-count-display');
+
+        // Function to calculate and update the discount and total cost
+        const updateCalculations = () => {
+            // 1. Count how many courses are selected and calculate the base cost
+            let checkedCount = 0;
+            let totalBaseCost = 0;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    checkedCount++;
+                    // Look up the price using the checkbox's value as the key
+                    totalBaseCost += coursePrices[checkbox.value] || 0; 
+                }
+            });
+
+            // 2. Determine the discount percentage based on the count (from PDF logic)
+            let discountPercentage = 0;
+            if (checkedCount === 2) {
+                discountPercentage = 5;
+            } else if (checkedCount === 3) {
+                discountPercentage = 10;
+            } else if (checkedCount >= 4) {
+                discountPercentage = 15;
+            }
+
+            // 3. Calculate the discounted price
+            const discountFactor = 1 - (discountPercentage / 100);
+            const discountedCost = totalBaseCost * discountFactor;
+            
+            // 4. Add VAT (15%) to the discounted cost
+            const finalCost = discountedCost * (1 + VAT_RATE);
+
+            // 5. Update the HTML to display the results
+            courseCountDisplay.textContent = checkedCount; 
+            discountDisplay.textContent = `${discountPercentage}%`;
+            
+            // Format to ZAR currency (R) with 2 decimal places
+            totalCostDisplay.textContent = `R${finalCost.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        };
+
+        // Add event listeners to all checkboxes to trigger recalculation on change
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateCalculations);
+        });
+
+        // Handle form submission to prevent actual sending and show a confirmation
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop form submission
+            
+            // Basic check for required contact fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const contact = document.getElementById('contact').value;
+            
+            if (!name || !email || !contact) {
+                alert("Please fill in all required contact information before submitting.");
+                return;
+            }
+
+            // Get final quote details
+            const finalQuote = totalCostDisplay.textContent;
+            const selectedCount = courseCountDisplay.textContent;
+            
+            alert(`✅ Enquiry Sent Successfully!\n\nThank you, ${name}.\nYou selected ${selectedCount} courses. Your estimated final quote is: ${finalQuote}.\n\nA representative will contact you shortly to finalize your booking.`);
+            
+            // Clear the form and reset calculations after successful submission
+            form.reset();
+            updateCalculations();
+        });
+
+        // Run the function initially to display 0 courses and R0.00
+        updateCalculations();
+    });
+    </script>
+</body>
+</html>
